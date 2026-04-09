@@ -17,7 +17,7 @@
         </p>
         <p><b>Задание 1.</b> Вставьте на страницу изображение <code>aquaria.jpg</code></p>
         <!-- Задание 1: простое изображение с указанием пути -->
-        <img src="aquaria.jpg" alt="Аквариум">
+        <img src="images/aquaria.jpg" alt="Аквариум">
 
         <h2>Альтернативный текст</h2>
         <p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст,
@@ -26,7 +26,7 @@
             изображения (отключен показ изображений).</p>
         <p><b>Задание 2.</b> Вставьте на страницу изображение с ошибочной ссылкой <code>slonn.png</code></p>
         <!-- Задание 2: изображение с неверным путём, будет показан alt-текст -->
-        <img src="slonn.png" alt="Изображение слона не загрузилось">
+        <img src="images/slonn.png" alt="Изображение слона не загрузилось">
 
         <h2>Размеры изображения</h2>
         <p>Атрибуты <code>width</code> и <code>height</code> задают размеры области изображения. Если оба атрибута не
@@ -38,7 +38,7 @@
         <p><b>Задание 3.</b>Вставьте на страницу изображение <code>redcat.jpg</code> с указанием его ширины и высоты.
         </p>
         <!-- Задание 3: изображение с фиксированными размерами -->
-        <img src="redcat.jpg" alt="Рыжий кот" width="400" height="300">
+        <img src="images/redcat.jpg" alt="Рыжий кот" width="400" height="300">
 
         <h2>Гибкие изображения</h2>
         <p>Для добавления гибких (responsive) изображений (таких, которые отображаются хорошо на устройствах с сильно
@@ -59,12 +59,12 @@
         </ul>
         <!-- Задание 4: адаптивное изображение с srcset и sizes -->
         <img
-            src="mushroom.jpg"
+            src="images/mushroom.jpg"
             alt="Гриб"
             srcset="
-                mushroom_portrait.jpg 575w,
-                mushroom_landscape.jpg 767w,
-                mushroom_retina.jpg 991w 2x
+                images/mushroom_portrait.jpg 575w,
+                images/mushroom_landscape.jpg 767w,
+                images/mushroom_retina.jpg 991w 2x
             "
             sizes="(max-width: 575px) 100vw,
                    (max-width: 767px) 50vw,
@@ -83,7 +83,7 @@
             или последним элементом в группе.
         </p>
         <p><b>Задание 5.</b> Вставьте на страницу изображение <code>globus.gif</code> с подписью к нему.</p>
-        <!-- Задание 5: изображение с подписью внутри figure -->
+        
         <figure>
             <img src="globus.gif" alt="Вращающийся глобус">
             <figcaption>Глобус, показывающий Землю из космоса</figcaption>
@@ -100,12 +100,12 @@
         </p>
         <p><b>Задание 6.</b> Вставьте на страницу изображение <code>html5-logo</code> в растровом (<code>png</code>) или
             векторном (<code>svg</code>) формате в зависимости от поддержки браузером этих форматов.</p>
-        <!-- Задание 6: использование picture для выбора формата -->
+     
         <picture>
-            <source type="image/svg+xml" srcset="html5-logo.svg">
-            <source type="image/png" srcset="html5-logo.png">
-            <!-- Резервное изображение, если другие форматы не поддерживаются -->
-            <img src="html5-logo.png" alt="Логотип HTML5">
+            <source type="image/svg+xml" srcset="images/html5-logo.svg">
+            <source type="image/png" srcset="images/html5-logo.png">
+         
+            <img src="images/html5-logo.png" alt="Логотип HTML5">
         </picture>
 
         <h2>Оптимизация изображений</h2>
@@ -120,10 +120,16 @@
             преобразуйте <code>light.gif</code> c помощью сервиса <a
                 href="https://cloudinary.com/tools/gif-to-avif">Cloudinary</a> в формат <code>AVIF</code> и добавьте на
             страницу.</p>
-        <!-- Задание 7: использование оптимизированных форматов WebP и AVIF -->
+
         <picture>
-            <source type="image/avif" srcset="light.avif">
-            <source type="image/webp" srcset="muscle.webp">
+            <source type="image/avif" srcset="images/light.avif">
+            <source type="image/webp" srcset="images/muscle.webp">
             <!-- Резервные изображения на случай неподдержки WebP/AVIF -->
-            <img src="muscle.png" alt="Мышца">
-            <img src="light
+            <img src="images/muscle.png" alt="Мышца"
+  <source type="image/avif" srcset="light.avif">
+    <img src="light.gif" alt="Светящаяся лампочка" width="300" height="300">
+
+
+
+        </body>
+</html>
