@@ -4,33 +4,25 @@
   <meta charset="utf-8">
   <title>Инструктор по Minecraft | MinecraftPro.ru</title>
   <link rel="icon" href="images/minecraft-icon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <head>
+  <meta charset="utf-8">
+  <title>Инструктор по Minecraft | MinecraftPro.ru</title>
+  <link rel="icon" href="images/cs_9eO2JAwahNkbJHyZ9Vw.ico" type="image/x-icon">
 
+  <!-- Подключение стилей (CSS) -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
+  <!-- Подключение скриптов (JS) -->
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-  <!-- Добавь этот блок для выравнивания картинок -->
-  <style>
-    /* Стили для блока "Услуги" */
-    #services .col-md-4 img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* Стили для блока "Проекты" */
-    #projects .img-responsive {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+</head>
 </head>
 <body>
   <div class="container">
@@ -47,56 +39,116 @@
       <div class="clearfix"></div>
     </header>
 
-    <!-- Навигация (исправлено: убрал role) -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <!-- ... остальной код навигации без изменений ... -->
+    <!-- Навигация -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#projects">Проекты</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="padding-top:8px; padding-bottom:8px;">
+            <span class="btn btn-success"><strong>Записаться на урок</strong></span>
+          </a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Баннер -->
-    <!-- ... без изменений ... -->
+    <div id="header-bottom" style="position:relative;">
+      <img src="images/banner-minecraft.png" style="width:100%;" alt="Баннер Minecraft">
+      <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;">
+        <div class="hidden-xs">
+          <h1>Стань мастером Minecraft<br>
+            <small style="color: white;">Индивидуальные уроки и мастер-классы</small>
+          </h1>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          <p class="lead">Стань мастером Minecraft — индивидуальные уроки и мастер-классы</p>
+        </div>
+        <a class="btn btn-success btn-lg">Записаться</a>
+      </div>
+    </div>
 
     <!-- Обо мне -->
-    <!-- ... без изменений ... -->
+    <div id="about">
+      <div class="row" style="text-align:center; margin-top:40px;">
+        <h2>Обо мне</h2>
+        <p class="lead">Опытный инструктор по Minecraft, помогу освоить игру с нуля!</p>
+        <hr>
+        <img src="images/about-me.png" alt="Фото инструктора" class="img-circle img-responsive center-block" style="max-width:250px; margin-bottom:20px;">
+        <p>Меня зовут [Твоё имя]. Я помогаю новичкам и опытным игрокам раскрыть весь потенциал Minecraft. Научу строить, выживать, создавать крутые механизмы и побеждать в PvP!</p>
+      </div>
+    </div>
 
     <!-- Услуги -->
     <div id="services">
-      <!-- ... без изменений, стили добавлены выше ... -->
-    </div>
-
-    <!-- Проекты (исправлено) -->
-    <div id="work">
-      <div class="row" style="text-align:center; background:#f35e59; color:#fff; margin-top:40px; padding:20px; border-radius:5px;">
-        <h2>Наши проекты</h2>
-        <p class="lead">Наши избранные работы</p>
+      <div class="row" style="text-align:center; margin-top:40px;">
+        <h2>Мои услуги</h2>
+        <p class="lead">Что я предлагаю для твоего прогресса в Minecraft</p>
         <hr>
 
-        <!-- Первый проект -->
-        <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-            background: #FFF; border-radius: 3px; color:black; width:100%;">
-          <li class="list1_desc" style="float:left; width:25%; min-width:150px;">
-            <h3>Embarcadero Technologies</h3>
-          </li>
-          <li class="list1_img" style="float:left; width:75%; margin-left:1em;">
-            <!-- ИСПРАВЛЕНО имя файла и стиль -->
-            <img src="images/project1.jpg" class="img-responsive" alt="" style="max-width:250px;" >
-          </li>
-          <li class="clearfix"></li> <!-- Важно закрывать список -->
-        </ul>
+        <div class="col-md-4">
+          <img src="images/service1.png" alt="" class="img-responsive center-block" style="max-width:150px; margin-bottom:15px;">
+          <h3>Индивидуальные уроки</h3>
+          <p>Персональные занятия по твоим целям: строительство, выживание, PvP, Redstone.</p>
+        </div>
 
-        <!-- Второй проект -->
+        <div class="col-md-4">
+          <img src="images/service2.png" alt="" class="img-responsive center-block" style="max-width:150px; margin-bottom:15px;">
+          <h3>Групповые мастер-классы</h3>
+          <p>Обучение в небольших группах — вместе строим, играем и развиваемся.</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/service3.png" alt="" class="img-responsive center-block" style="max-width:150px; margin-bottom:15px;">
+          <h3>Разбор ошибок и советы</h3>
+          <p>Анализирую твой стиль игры, даю советы по улучшению и раскрываю секреты профи.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Проекты -->
+    <div id="projects">
+      <div class="row" style="text-align:center; background:#f3f3f3; margin-top:40px; padding:20px; border-radius:5px;">
+        <h2>Мои проекты и достижения</h2>
+        <p class="lead">Примеры моих работ и успехов учеников</p>
+        <hr>
+
         <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-            background: #FFF; border-radius: 3px; color:black; width:100%;">
+            background: #FFF; border-radius: 3px; color:black; display:inline-block; text-align:left; width:100%;">
           <li class="list1_desc" style="float:left; width:25%; min-width:150px;">
-            <h3>Minerva Club Resort & Golf</h3>
+            <h3>Постройка замка</h3>
+            <small>Ученик построил средневековый замок за 2 недели</small>
           </li>
-          <li class="list1_img" style="float:left; width:75%; margin-left:1em;">
-          
-            <img src="images/project2.png" class="img-responsive" alt="" style="max-width:250px;" >
+          <li class="list1_img" style="float:left; width:70%; margin-left:1em;">
+            <img src="images/project1.png" class="img-responsive" alt="" style="max-width:250px;">
           </li>
           <li class="clearfix"></li>
         </ul>
 
-        <!-- Третий проект -->
+        <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+            background: #FFF; border-radius: 3px; color:black; display:inline-block; text-align:left; width:100%;">
+          <li class="list1_desc" style="float:left; width:25%; min-width:150px;">
+            <h3>PvP-турнир</h3>
+            <small>Победа в командном турнире среди учеников</small>
+          </li>
+          <li class="list1_img" style="float:left; width:70%; margin-left:1em;">
+            <img src="images/project2.png" class="img-responsive" alt="" style ="max-width:250px;" >
+          </li>
+          <li class="clearfix"></li>
+        </ul>
+
         <ul style="
             list-style:none;
             margin:15px;
@@ -105,6 +157,8 @@
             background:#FFF;
             border-radius:3px;
             color:black;
+            display:inline-block;
+            text-align:left;
             width:100%;
           ">
           <li class="
@@ -116,7 +170,8 @@
                 min-width:150px;
               "
             >
-              <h3>JacketShop</h3>
+              <h3>Механизмы Redstone</h3>
+              <small>Создали автоматическую ферму и ловушки для сервера</small>
             </li>
             <li 
               class="
@@ -124,11 +179,10 @@
                 " 
               style="
                 float:left;
-                width:75%;
+                width:70%;
                 margin-left:1em;
               "
               >
-              <!-- ИСПРАВЛЕНО имя файла и стиль -->
               <img 
                 src="
                   images/project3.jpg
@@ -151,13 +205,32 @@
               
             </li>
           
-        </ul>
+          
+          
+          
         
       </div>
     </div>
 
- 
-    
+    <!-- Подвал -->
+    <footer style="
+      margin-top:
+      40px;
+    ">
+      <div 
+        style="
+          text-align:center;
+          background:
+          #2a2a2a;
+          padding:
+          1em;
+          color:
+          #fff;
+        "
+      >
+        © MinecraftPro.ru<br>2026
+      </div>
+    </footer>
   </div>
 </body>
 </html>
